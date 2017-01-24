@@ -55,6 +55,16 @@ public class HomeController {
 		
 		return mv;
 	}
+	
+	@RequestMapping("/category")
+	public ModelAndView category() {
+		System.out.println("contact page");
+ 
+		ModelAndView mv = new ModelAndView("category");
+		
+		return mv;
+	}
+	
 	@RequestMapping("/services")
 	public ModelAndView showServices() {
 		System.out.println("services page");
@@ -71,4 +81,23 @@ public class HomeController {
 		
 		return mv;
 }
-}
+	@RequestMapping("/validate")
+	public String validate(@RequestParam("Username")String Username,
+			@RequestParam("Password")String Password)
+	{
+		System.out.println("In validate method");
+		System.out.println("Username: "+Username);
+		System.out.println("Password: "+ Password);
+		ModelAndView mv = new ModelAndView("homeadmin");
+		
+		if( Username.equals("niit")&&(Password.equals("password")))
+		{
+			return "homeadmin";
+		}
+		else
+		{
+			return "login";
+		}
+	
+	}}
+		
