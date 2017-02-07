@@ -102,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="<c:url value="category"/>">Category</a><i>/</i></li>
+					
 					<li><a href="<c:url value="aboutus"/>">About Us</a><i>/</i></li>
 					<li><a href="<c:url value="contact"/>">contact</a><i>/</i></li>
 					<li><a href="products.html">Best Deals</a><i>/</i></li>

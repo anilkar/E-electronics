@@ -56,15 +56,6 @@ public class HomeController {
 		return mv;
 	}
 	
-	@RequestMapping("/category")
-	public ModelAndView category() {
-		System.out.println("contact page");
- 
-		ModelAndView mv = new ModelAndView("category");
-		
-		return mv;
-	}
-	
 	@RequestMapping("/services")
 	public ModelAndView showServices() {
 		System.out.println("services page");
